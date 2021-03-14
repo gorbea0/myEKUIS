@@ -1,6 +1,6 @@
 /**
 * @file ekuis.c
-* @version 1.0
+* @version 1.0b
 * @Author Oscar Unzueta
 * @date 26/10/2020
 * @brief generacion archivo xml para exportar datos analiticos del lims al EKUIS
@@ -20,7 +20,7 @@ char *unidades (char const *paramet){
 	//obtiene las unidades recibiendo el parametro de analisis
 	if (strcmp(paramet,"PH")==0){	return "-";	
 	}
-	  else if (strcmp(paramet,"CONDUC")==0){	return "µS/cm";	
+	  else if (strcmp(paramet,"CONDUC")==0){	return "ÂµS/cm";	
 	}
 	  else if (strcmp(paramet,"TURB")==0){	return "UNF";	
 	}
@@ -41,13 +41,13 @@ char *unidades (char const *paramet){
 			strcmp(paramet,"12DCP")==0 || strcmp(paramet,"13DCB")==0 || strcmp(paramet,"14DCB")==0 || 
 			strcmp(paramet,"BEN")==0 || strcmp(paramet,"BDCM")==0 || strcmp(paramet,"BR3CH")==0 
 			|| strcmp(paramet,"C13CDP")==0 || strcmp(paramet,"CB")==0 || strcmp(paramet,"CL3CH")==0 || strcmp(paramet,"CLVI")==0 || strcmp(paramet,"ETB")==0
-			|| strcmp(paramet,"PLTOT")==0 || strcmp(paramet,"THM")==0 || strcmp(paramet,"TOL")==0 || strcmp(paramet,"CLET")==0)	{	return "µg/l";	
+			|| strcmp(paramet,"PLTOT")==0 || strcmp(paramet,"THM")==0 || strcmp(paramet,"TOL")==0 || strcmp(paramet,"CLET")==0)	{	return "Âµg/l";	
 	}
 	  else if (strcmp(paramet,"AL")==0||strcmp(paramet,"AS")==0||strcmp(paramet,"BA")==0||strcmp(paramet,"B")==0||
 	strcmp(paramet,"CD")==0||strcmp(paramet,"CR")==0||strcmp(paramet,"CU")==0||strcmp(paramet,"FE")==0||
 	strcmp(paramet,"NI")==0||strcmp(paramet,"PB")==0||strcmp(paramet,"MN")==0||strcmp(paramet,"SB")==0||
 	strcmp(paramet,"SE")==0||strcmp(paramet,"ZN")==0||strcmp(paramet,"MO")==0){
-	return "µg/l";}	
+	return "Âµg/l";}	
 	 else 	{	return "?";}
 }  
 
